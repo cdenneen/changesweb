@@ -9,7 +9,7 @@ function layoutMediaGrid_id2(range)
 {createMediaStream_id2().load('http://www.changeshairsalon.net/home',function(imageStream)
 {if(range==null)
 {range=new IWRange(0,imageStream.length);}
-IWLayoutPhotoGrid('id2',new IWPhotoGridLayout(3,new IWSize(165,165),new IWSize(165,32),new IWSize(204,212),27,27,0,new IWSize(2,2)),new IWEmptyStroke(),imageStream,range,null,null,1.000000,{backgroundColor:'rgb(0, 0, 0)',reflectionHeight:100,reflectionOffset:2,captionHeight:100,fullScreen:0,transitionIndex:2},'Media/slideshow.html','widget1','widget2','widget3')});}
+IWLayoutPhotoGrid('id2',new IWPhotoGridLayout(3,new IWSize(135,135),new IWSize(135,32),new IWSize(167,182),27,27,0,new IWSize(6,6)),new IWPhotoFrame([IWCreateImage('Photos_files/comic-1_01.png'),IWCreateImage('Photos_files/comic-1_02.png'),IWCreateImage('Photos_files/comic-1_03.png'),IWCreateImage('Photos_files/comic-1_06.png'),IWCreateImage('Photos_files/comic-1_09.png'),IWCreateImage('Photos_files/comic-1_08.png'),IWCreateImage('Photos_files/comic-1_07.png'),IWCreateImage('Photos_files/comic-1_04.png')],null,0,1.000000,4.000000,4.000000,1.000000,1.000000,5.000000,5.000000,6.000000,6.000000,71.000000,115.000000,71.000000,115.000000,null,null,null,0.500000),imageStream,range,null,null,1.000000,{backgroundColor:'rgb(0, 0, 0)',reflectionHeight:100,reflectionOffset:2,captionHeight:100,fullScreen:0,transitionIndex:2},'Media/slideshow.html','widget1','widget2','widget3')});}
 function relayoutMediaGrid_id2(notification)
 {var userInfo=notification.userInfo();var range=userInfo['range'];layoutMediaGrid_id2(range);}
 function onStubPage()
@@ -25,7 +25,7 @@ function onPageLoad()
 IWRegisterNamedImage('movie overlay','Media/Photo-Overlay-Movie.png')
 loadMozillaCSS('Photos_files/PhotosMoz.css')
 adjustLineHeightIfTooBig('id1');adjustFontSizeIfTooBig('id1');NotificationCenter.addObserver(null,relayoutMediaGrid_id2,'RangeChanged','id2')
-adjustLineHeightIfTooBig('id3');adjustFontSizeIfTooBig('id3');adjustLineHeightIfTooBig('id4');adjustFontSizeIfTooBig('id4');Widget.onload();fixupAllIEPNGBGs();fixAllIEPNGs('Media/transparent.gif');applyEffects()
+adjustLineHeightIfTooBig('id3');adjustFontSizeIfTooBig('id3');Widget.onload();fixupAllIEPNGBGs();fixAllIEPNGs('Media/transparent.gif');applyEffects()
 initializeMediaStream_id2()}
 function onPageUnload()
 {Widget.onunload();}
