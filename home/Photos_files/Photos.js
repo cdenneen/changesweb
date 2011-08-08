@@ -25,7 +25,7 @@ function onPageLoad()
 IWRegisterNamedImage('movie overlay','Media/Photo-Overlay-Movie.png')
 loadMozillaCSS('Photos_files/PhotosMoz.css')
 adjustLineHeightIfTooBig('id1');adjustFontSizeIfTooBig('id1');NotificationCenter.addObserver(null,relayoutMediaGrid_id2,'RangeChanged','id2')
-adjustLineHeightIfTooBig('id3');adjustFontSizeIfTooBig('id3');adjustLineHeightIfTooBig('id4');adjustFontSizeIfTooBig('id4');Widget.onload();fixAllIEPNGs('Media/transparent.gif');applyEffects()
+adjustLineHeightIfTooBig('id3');adjustFontSizeIfTooBig('id3');adjustLineHeightIfTooBig('id4');adjustFontSizeIfTooBig('id4');Widget.onload();fixupAllIEPNGBGs();fixAllIEPNGs('Media/transparent.gif');applyEffects()
 initializeMediaStream_id2()}
 function onPageUnload()
 {Widget.onunload();}
